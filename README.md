@@ -2,11 +2,8 @@
 chat para obtener info de servers usando Gtalk o hangout
 
 
-###########################################################################
-##################### INSTALAR Hangouts (Gtalk) ###########################
-###########################################################################
-## utilizo gtalk o hangouts para enviar comandos y ejecutar acciones ######
-###########################################################################
+INSTALAR Hangouts (Gtalk) utilizo gtalk o hangouts para enviar comandos y ejecutar acciones
+
 
 apt-get install centerim screen
 
