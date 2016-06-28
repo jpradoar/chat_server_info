@@ -1,0 +1,8 @@
+%action contestador automagico
+event msg
+proto all
+status all
+options stdin stdout
+%exec
+msg=`cat`
+python /home/tu_usuario/.centerim/chat.py $msg
