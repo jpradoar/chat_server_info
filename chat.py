@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# IMPORTANTE: Falta pasar todo a funciones de python.
 import sys
 import os
 import datetime
@@ -59,20 +60,13 @@ if comando == "w":
 	os.system("who")
 
 if comando == "load":
-	os.system("uptime | awk {'print $7 $8 $9 $10 $11'}")
+	os.system("uptime | awk -F'[a-z]:' '{ print $2}'")
 
 if comando == "lan":
-	os.system("ifconfig eth0 |  grep Direc. | grep -v inet6 |  cut -f2 -d':' | awk {'print $1'}")
+	os.system("ifconfig eth0 |grep inet: | cut -d":" -f2 | awk {'print $1'}")
 
 if comando == "wlan":
 	os.system("ifconfig wlan0 |  grep Direc. | grep -v inet6 |  cut -f2 -d':' | awk {'print $1'}")
 
 if comando == "cal":
 	os.system("cal")
-
-if comando == "voz":
-    print "Comando: risas mujeres => ejecuta un mp3 con sonido de risas de mujeres \n "
-    print "Comando:  cualquier string o texto que termine con .voz sera hablado por el sistema"
-
-if comando == "risas mujeres":
-    os.system("mpg123 /root/sonidos/risas.mp3")
