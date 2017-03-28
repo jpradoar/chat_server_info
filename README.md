@@ -6,7 +6,8 @@ apt-get install centerim screen
 
 Creo dos archivos:
 
-Config: Tiene los parametros generales y los datos de la cuenta de gmail
+<b>Config:</b> Tiene los parametros generales y los datos de la cuenta de gmail
 
-External: Tiene los comandos para ejecutar y leer los mensajes.
+<b>External:</b> Tiene los comandos para ejecutar y leer los mensajes.
 
+<img src="https://github.com/jpradoar/chat_server_info/blob/master/chat-webserver.png?raw=true" />
