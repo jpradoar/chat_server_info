@@ -1,13 +1,15 @@
 # chat_server_info
-chat para obtener info de servers usando Gtalk o hangout para enviar comandos y ejecutar acciones
+basic chat to obtain basic info from servers, using hangout to send/response commands and show info
 
-Instalo: 
+You need install: 
 apt-get install centerim screen
 
-Creo dos archivos:
+I create tow files or configs
 
-<b>Config:</b> Tiene los parametros generales y los datos de la cuenta de gmail
+<b>Config:</b>the config have the general parameters and autenteication email.
+<b>External:</b> the external have the "logical idea"
+<b>chat.py:</b> Is a simple python script to capture and execute commands (It's true, is very horrible, but it works)
 
-<b>External:</b> Tiene los comandos para ejecutar y leer los mensajes.
-
+<div align="center">
 <img src="https://github.com/jpradoar/chat_server_info/blob/master/chat-webserver.png?raw=true" />
+</div>
